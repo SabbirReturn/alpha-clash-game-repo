@@ -76,12 +76,12 @@
                 </div>
                 <!-- result and life -->
                 <div class=" flex justify-between w-full px-48">
-                    <button class="btn bg-[#894189] text-[#FFFFFF]">
+                    <button class="btn bg-[#894189] text-[#FFFFFF] rounded-full">
                         Button
                         <img src="icons/Vector.png" alt="">
                         <span>1</span>
                     </button>
-                    <button class="btn bg-[#894189] text-[#FFFFFF]">
+                    <button class="btn bg-[#894189] text-[#FFFFFF] rounded-full">
                         Score
                         <img src="icons/monetization_on.png" alt="">
                         <span>1</span>
@@ -89,6 +89,18 @@
                 </div>
              </div>
         </section>
+
+        <!-- score board -->
+         <section class="scoreBoard flex justify-center items-center min-h-screen hidden">
+            <div class="text-center space-y-5 bg-[#FFFFFF33] p-5 rounded-lg">
+                <h1 class="text-8xl text-[#FFFFFF]">
+                    <span>Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#FFFFFF] text-[#010313] poppins-semibold ">Play again</button>
+                <p class="text-[#FFFFFF]">Practice will make you Pro</p>
+            </div>
+         </section>
     </main>
 </body>
 </html>
