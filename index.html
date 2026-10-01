@@ -15,16 +15,16 @@
     <main class="bg-[#1E1E1E] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
 
         <!-- home screen -->
-        <section class=" home min-h-screen  flex  justify-center items-center">
+        <section id="home-screen" class="min-h-screen  flex  justify-center items-center">
             <div class="text-white flex flex-col  items-center gap-10">
                 <h1 class="text-8xl poppins-extrabold">ALPHABET CLASH</h1>
                 <p class="text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn btn-neutral btn-outline bg-[#FFFFFF]">Play Now</button>
+                <button onclick="playNow()" class="btn btn-neutral btn-outline bg-[#FFFFFF]">Play Now</button>
             </div>
         </section>
 
         <!--Play Ground -->
-        <section class="playGround hidden">
+        <section id="playGround" class="hidden">
             <!-- play Ground Start -->
              <div class="min-h-screen flex flex-col  justify-center items-center gap-10">
                 <!-- screen -->
@@ -102,5 +102,7 @@
             </div>
          </section>
     </main>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
