@@ -7,3 +7,18 @@ function showElementById(elementId){
 let element = document.getElementById(elementId);
 element.classList.remove('hidden')
 }
+
+function getRandomAlphabet(){
+    let alphabetString = 'abcdefghijklmnopqrstuvwxyz'
+    let alphabets = alphabetString.split('');
+
+    let randomNumber = Math.random()*25
+    let index = Math.round(randomNumber);
+    let alphabet = alphabets[index];
+    return alphabet;
+}
+
+function setAlphabetColor(elementId){
+    let element = document.getElementById(elementId);
+    element.classList.add('bg-red-400')
+}
