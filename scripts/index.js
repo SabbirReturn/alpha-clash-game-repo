@@ -10,5 +10,6 @@ function continueGame(){
 function playNow(){
     hideElementById('home-screen')
     showElementById('playGround')
+    // continueGame();
     continueGame();
 }
