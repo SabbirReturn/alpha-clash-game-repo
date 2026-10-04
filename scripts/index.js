@@ -3,13 +3,13 @@ function continueGame(){
 
     let currentAlphabet = document.getElementById('current-alphabet')
     currentAlphabet.innerText = alphabet;
-    setAlphabetColor(alphabet)
+    // setAlphabetColor(alphabet);
+    setAlphabetColor(alphabet);
 }
 
 
 function playNow(){
     hideElementById('home-screen')
     showElementById('playGround')
-    // continueGame();
     continueGame();
 }
