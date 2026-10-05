@@ -22,3 +22,8 @@ function setAlphabetColor(elementId){
     let element = document.getElementById(elementId);
     element.classList.add('bg-red-400')
 }
+
+function removeAlphabetColor(elementId){
+    let element = document.getElementById(elementId)
+    element.classList.remove('bg-red-400')
+}

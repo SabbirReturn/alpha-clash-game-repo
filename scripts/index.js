@@ -9,10 +9,14 @@ function continueGame(){
 document.addEventListener('keyup', handleKeyBoardEvent)
 
 function handleKeyBoardEvent(event){
-    let playerPress = event.key.toUpperCase();
+    let playerPress = event.key;
+    let playerPressUpper = playerPress.toUpperCase()
     let expectedPress = document.getElementById('current-alphabet').innerText
-    if(playerPress === expectedPress){
-        console.log('you are win')
+    if(playerPressUpper === expectedPress){
+        removeAlphabetColor(playerPress);
+        let score = document.getElementById('score')
+        score.innerText = 
+        continueGame()
     }
     else{
         console.log('Mara khaw')
