@@ -19,6 +19,7 @@ function handleKeyBoardEvent(event){
         continueGame()
     }
     else{
+        // console.log('Mara khaw')
         console.log('Mara khaw')
     }
 
