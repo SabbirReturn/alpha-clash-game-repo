@@ -14,8 +14,10 @@ function handleKeyBoardEvent(event){
     let expectedPress = document.getElementById('current-alphabet').innerText
     if(playerPressUpper === expectedPress){
         removeAlphabetColor(playerPress);
-        let score = document.getElementById('score')
-        score.innerText = 
+        let scoreContainer = document.getElementById('score')
+        let currentScore = parseInt(scoreContainer.innerText);
+        let newScore = currentScore + 1;
+        scoreContainer.innerText = newScore
         continueGame()
     }
     else{
