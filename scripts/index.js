@@ -14,11 +14,15 @@ function handleKeyBoardEvent(event){
     let expectedPress = document.getElementById('current-alphabet').innerText
     if(playerPressUpper === expectedPress){
         removeAlphabetColor(playerPress);
-        scoreUpdate('score')
+        let currentScore = getTextElementValueById('score');
+        let newScore = currentScore + 1;
+        setElementValueById('score',newScore);
         continueGame()
     }
     else{
-        lifeUpdate('life')
+        let currentLife = getTextElementValueById('life');
+        let updateLife = currentLife - 1;
+        setElementValueById('life', updateLife)
     }
 
 }

@@ -28,19 +28,15 @@ function removeAlphabetColor(elementId){
     element.classList.remove('bg-red-400')
 }
 
-function scoreUpdate(elementId){
-    let scoreContainer = document.getElementById(elementId);
-    let currentScore = parseInt(scoreContainer.innerText);
-    let newScore = currentScore + 1;
-    scoreContainer.innerText = newScore;
 
+function getTextElementValueById(elementId){
+    let element = document.getElementById(elementId);
+    let elementValueText = element.innerText;
+    let value = parseInt(elementValueText);
+    return value;
 }
 
-function lifeUpdate(elementId){
-    let lifeContainer = document.getElementById(elementId);
-    
-    let currentLife = parseInt(lifeContainer.innerText);
-
-    let newLife = currentLife - 1;
-    lifeContainer.innerText = newLife;
+function setElementValueById(elementId,value){
+    let element = document.getElementById(elementId);
+    element.innerText = value;
 }
