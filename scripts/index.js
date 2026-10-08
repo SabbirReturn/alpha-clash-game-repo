@@ -14,19 +14,11 @@ function handleKeyBoardEvent(event){
     let expectedPress = document.getElementById('current-alphabet').innerText
     if(playerPressUpper === expectedPress){
         removeAlphabetColor(playerPress);
-        let scoreContainer = document.getElementById('score')
-        let currentScore = parseInt(scoreContainer.innerText);
-        let newScore = currentScore + 1;
-        scoreContainer.innerText = newScore
+        scoreUpdate('score')
         continueGame()
     }
     else{
-        // console.log('Mara khaw')
-        console.log('Mara khaw')
-        let lifeContainer = document.getElementById('life');
-        let currentLife = parseInt(lifeContainer.innerText);
-        let newLife = currentLife - 1;
-        lifeContainer.innerText = newLife
+        lifeUpdate('life')
     }
 
 }

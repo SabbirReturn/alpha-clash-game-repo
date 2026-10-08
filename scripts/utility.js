@@ -25,6 +25,22 @@ function setAlphabetColor(elementId){
 
 function removeAlphabetColor(elementId){
     let element = document.getElementById(elementId)
-    // element.classList.remove('bg-red-400')
     element.classList.remove('bg-red-400')
+}
+
+function scoreUpdate(elementId){
+    let scoreContainer = document.getElementById(elementId);
+    let currentScore = parseInt(scoreContainer.innerText);
+    let newScore = currentScore + 1;
+    scoreContainer.innerText = newScore;
+
+}
+
+function lifeUpdate(elementId){
+    let lifeContainer = document.getElementById(elementId);
+    
+    let currentLife = parseInt(lifeContainer.innerText);
+
+    let newLife = currentLife - 1;
+    lifeContainer.innerText = newLife;
 }
