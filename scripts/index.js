@@ -23,6 +23,10 @@ function handleKeyBoardEvent(event){
     else{
         // console.log('Mara khaw')
         console.log('Mara khaw')
+        let lifeContainer = document.getElementById('life');
+        let currentLife = parseInt(lifeContainer.innerText);
+        let newLife = currentLife - 1;
+        lifeContainer.innerText = newLife
     }
 
 }
