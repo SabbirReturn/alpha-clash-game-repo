@@ -7,19 +7,33 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
 
     </header>
-    <main class="bg-[#1E1E1E] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
-
+    <main class="relative min-h-screen overflow-hidden
+         bg-[#090914]
+         bg-[url(images/background.png)]
+         bg-no-repeat bg-center bg-cover">
         <!-- home screen -->
         <section id="home-screen" class="min-h-screen  flex  justify-center items-center">
             <div class="text-white flex flex-col  items-center gap-10">
                 <h1 class="text-8xl poppins-extrabold">ALPHABET CLASH</h1>
                 <p class="text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button onclick="playNow()" class="btn btn-neutral btn-outline bg-[#FFFFFF]">Play Now</button>
+                <button onclick="playNow()" class="btn btn-lg border-0 rounded-full px-10
+                bg-gradient-to-r from-purple-600 to-indigo-600
+                 text-white text-lg font-bold
+                shadow-[0_0_25px_rgba(139,92,246,0.45)]
+                hover:scale-105 hover:shadow-[0_0_35px_rgba(139,92,246,0.7)]
+                transition duration-300">
+             Play Now
+                <span class="text-xl">➜</span>
+            </button>
+            <p class="text-xs sm:text-sm text-gray-500">
+                READY · FOCUS · TYPE · WIN
+            </p>
             </div>
         </section>
 
@@ -29,12 +43,18 @@
              <div class="min-h-screen flex flex-col  justify-center items-center gap-10">
                 <!-- screen -->
                 <div>
-                    <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] text-white">
+                    <div class="w-[280px] sm:w-[340px] md:w-[420px]
+                        h-[280px] sm:h-[320px] md:h-[350px]
+                        rounded-3xl border border-white/20
+                         bg-white/10 backdrop-blur-xl
+                        shadow-[0_0_40px_rgba(139,92,246,0.18)]
+                        flex flex-col overflow-hidden text-white">
                         <div class="flex justify-center">
                             <p class="bg-[#2F2941] text-[#FFFFFF] poppins-medium px-8 rounded-b-xl">Don't watch keyboard  while playing...</p>
                         </div>
                         <div class="flex justify-center items-center h-full">
-                            <p id="current-alphabet" class="text-8xl poppins-semibold text-[#010313] uppercase">Y</p>
+                            <p id="current-alphabet" class="text-7xl sm:text-8xl md:text-9xl font-extrabold uppercase text-white
+                            drop-shadow-[0_0_25px_rgba(168,85,247,0.9)]">Y</p>
                         </div>
                     </div>
                 </div>
@@ -75,7 +95,8 @@
                     </div>
                 </div>
                 <!-- result and life -->
-                <div class=" flex justify-between w-full px-48">
+                <div class="flex justify-between items-center
+                        gap-4 w-full max-w-md mx-auto px-4">
                     <button class="btn bg-[#894189] text-[#FFFFFF] rounded-full">
                         Life
                         <img src="icons/Vector.png" alt="">
