@@ -49,5 +49,6 @@ function gameOver(){
     let lastScore = getTextElementValueById('score');
     setElementValueById('last-score',lastScore)
     let currentAlphabet = getElementTextById('current-alphabet')
+    // removeAlphabetColor(currentAlphabet)
     removeAlphabetColor(currentAlphabet)
 }
