@@ -44,5 +44,6 @@ function setElementValueById(elementId,value){
 function getElementTextById(elementId){
     let element = document.getElementById(elementId);
     let text = element.innerText;
+    // return text;
     return text;
 }
